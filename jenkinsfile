@@ -1,6 +1,0 @@
-#!/bin/bash
-echo "Hello, Jenkins!"
-echo "This is my first freestyle job."
-date
-whoami
-hostname
