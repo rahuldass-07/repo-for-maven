@@ -55,7 +55,7 @@ pipeline {
                 sshagent(['ec2-ssh']) {
                     sh """
                     ssh ec2-user@$SERVER_IP '
-                        sudo cd /opt/tomcat/webapps
+                        cd /opt/tomcat/webapps
                         sudo wget https://tomcat.apache.org/tomcat-7.0-doc/appdev/sample/sample.war
                     '
                     """
